@@ -2,13 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ronan/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=$PATH:~/esp/xtensa-esp32-elf/bin
 export PATH=$PATH:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/
-export PATH=$PATH:/Users/ronan/dev/apache-maven-3.6.3/bin
+export PATH=$PATH:$HOME/dev/apache-maven-3.6.3/bin
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -108,10 +108,10 @@ export EDITOR='vim'
 export PATH="/usr/local/opt/opencv3/bin:$PATH"
 export PATH="/usr/local/opt/opencv3/bin:$PATH"
 export PATH="/usr/local/opt/opencv3/bin:$PATH"
-export PATH="/Users/ronan/Library/Python/2.7/bin:$PATH"
-export PATH="/Users/ronan/bin/:$PATH"
+export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+export PATH="$HOME/bin/:$PATH"
 export PATH="~/pebble-dev/pebble-sdk-4.5-mac/bin:$PATH"
-export PATH="/Users/ronan/.nimble/bin:$PATH"
+export PATH="$HOME/.nimble/bin:$PATH"
 
 alias httpserver='python -m SimpleHTTPServer 8000'
 export PATH="/usr/local/opt/llvm/bin:$PATH"
@@ -130,7 +130,7 @@ export IDF_PATH=~/dev/devyellow/esp32-at/esp-idf
 # Monimalz
 alias sshmnz="ssh -i ~/.ssh/id_rsa_monimalz_2 -o StrictHostKeyChecking=no root@192.168.7.2"
 
-export PATH="/usr/local/opt/llvm/bin:/usr/local/opt/opencv3/bin:/usr/local/opt/opencv3/bin:/usr/local/opt/opencv3/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/ronan/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/opt/llvm/bin:/usr/local/opt/opencv3/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/ronan/.cargo/bin:/Users/ronan/Library/Android/sdk/tools:/Users/ronan/Library/Android/sdk/platform-tools:/Users/ronan/esp/xtensa-esp32-elf/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/:/Users/ronan/Library/Android/sdk/tools:/Users/ronan/Library/Android/sdk/platform-tools:/Users/ronan/esp/xtensa-esp32-elf/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/:/Users/ronan/.vimpkg/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:/usr/local/opt/opencv3/bin:/usr/local/opt/opencv3/bin:/usr/local/opt/opencv3/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/opt/llvm/bin:/usr/local/opt/opencv3/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:$HOME/.cargo/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$HOME/esp/xtensa-esp32-elf/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$HOME/esp/xtensa-esp32-elf/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/:$HOME/.vimpkg/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
@@ -178,10 +178,10 @@ function mv() {
 } 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ronan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ronan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/ronan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ronan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 gclone() {
     git clone "$1" && cd "$(basename "$1" .git)"
