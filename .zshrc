@@ -187,6 +187,4 @@ gclone() {
     git clone "$1" && cd "$(basename "$1" .git)"
 }
 
-export DOCKER_HOST="192.168.1.36:2376" 
-
-alias dotfiles='/usr/bin/git --git-dir=/Users/ronan/.dotfiles/ --work-tree=/Users/ronan'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
