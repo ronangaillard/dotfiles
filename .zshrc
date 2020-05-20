@@ -11,6 +11,7 @@ export PATH=$PATH:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin
 export PATH=$PATH:$HOME/dev/apache-maven-3.6.3/bin
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export FZF_BASE=/usr/bin/fzf
 
 autoload -Uz compinit
 if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
@@ -69,6 +70,8 @@ ZSH_THEME="common"
 plugins=(
     git
     zsh-autosuggestions
+    docker-compose
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
